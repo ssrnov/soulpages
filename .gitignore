@@ -1,17 +1,15 @@
-# ==========================
-# SoulSync project ignore rules
-# ==========================
-
-# Secrets / environment files
+# Sensitive config and credentials
 .env
 .env.*
 *.pem
+*.key
+*.crt
 includes/config.php
 includes/db.php
 app/includes/db.php
 app/viewer/google-auth.php
 
-# Runtime / uploaded content
+# Local runtime and editor files
 uploads/
 media/
 public/uploads/
@@ -19,33 +17,11 @@ public/uploads/
 error_log
 cache/
 tmp/
-
-# Dependency / build artifacts
-node_modules/
-vendor/
-coverage/
-.next/
-out/
-build/
-
-# IDE / editor / OS files
 .vscode/
 .idea/
 .DS_Store
 .claude/
-Thumbs.db
 
-# Temporary / backup files
-*.tmp
-*.bak
-*.swp
-*.swo
-*.orig
-
-# Archives usually not committed
-*.zip
-*.tar.gz
-*.rar
-
-# Optional project-specific exclusions
+# Local app login files
 login.php
+admin-login.php
