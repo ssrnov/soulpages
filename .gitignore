@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Custom Ignore
+includes/config.php
+includes/db.php
+app/includes/db.php
+app/viewer/google-auth.php
+login.php
+.claude/
