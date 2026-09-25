@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# Prevent directory listings
+Options -Indexes
+
+# If the request matches an actual file or directory, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite clean URL /p/slug-name to /p.php?s=slug-name
+RewriteRule ^p/([a-zA-Z0-9_-]+)$ p.php?s=$1 [QSA,L]
+
+# Short festival links: /i/slug -> f.php?s=slug
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^i/([a-zA-Z0-9_-]+)$ f.php?s=$1 [QSA,L]
+
+# Explicit MIME Types for audio/media formats (required for Safari/iOS playback)
+AddType audio/aac .aac
+AddType audio/aac .acc
+AddType audio/mp4 .m4a
+AddType audio/mpeg .mp3
+AddType audio/ogg .ogg
+AddType audio/webm .webm
+AddType audio/wav .wav
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType video/ogg .ogv
+AddType video/quicktime .mov
+

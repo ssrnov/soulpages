@@ -1,0 +1,3 @@
+# Block all direct access — these files are only included by PHP
+Order Allow,Deny
+Deny from all

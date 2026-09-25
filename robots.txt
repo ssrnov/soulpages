@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api.php
+Disallow: /dashboard.php
+Disallow: /payment.php
+Disallow: /logout.php
+Disallow: /verify.php
+Disallow: /verification-pending.php
+Disallow: /forgot-password.php
+Disallow: /publish-success.php
+Disallow: /uploads/
+
+Sitemap: https://loopr.site/sitemap.xml

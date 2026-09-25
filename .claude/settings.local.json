@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print length, NR}' \"shravni_surprise \\(6\\).html\")",
+      "PowerShell($p = Get-Command python -ErrorAction SilentlyContinue; if \\($p\\) { Write-Output $p.Source } else { $p2 = Get-Command py -ErrorAction SilentlyContinue; if \\($p2\\) { Write-Output $p2.Source } else { Write-Output \"none\" } })",
+      "Bash(rm -f _caketest.html .claude/launch.json)",
+      "Bash(rmdir .claude)",
+      "Bash(ls _caketest.html)",
+      "Bash(rm -f _wizmock.html .claude/launch.json)",
+      "Bash(rm -f _loadertest.html _caketest.html .claude/launch.json)",
+      "Bash(rm -f _proptest.html .claude/launch.json)",
+      "Bash(rm -f _rosetest.html _proptest.html .claude/launch.json)",
+      "Bash(rm -f _pptest.html .claude/launch.json)",
+      "Bash(rm -f _opttest.html .claude/launch.json)",
+      "Bash(\"/c/Users/sgame/flutter_windows_3.44.0-stable/flutter/bin/flutter\" build *)",
+      "Bash(cp soulsync.php \"/c/Users/sgame/Downloads/soulsync-system_soulsync.php\")",
+      "Bash(powershell.exe -NoProfile -Command '$src='\\\\''C:\\\\Users\\\\sgame\\\\.gemini\\\\antigravity-ide\\\\scratch\\\\soulsync-system'\\\\''; $tmp='\\\\''C:\\\\Users\\\\sgame\\\\AppData\\\\Local\\\\Temp\\\\ss_pkgQ\\\\soulsync-system'\\\\''; if\\(Test-Path '\\\\''C:\\\\Users\\\\sgame\\\\AppData\\\\Local\\\\Temp\\\\ss_pkgQ'\\\\''\\){Remove-Item '\\\\''C:\\\\Users\\\\sgame\\\\AppData\\\\Local\\\\Temp\\\\ss_pkgQ'\\\\'' -Recurse -Force}; New-Item -ItemType Directory -Force -Path $tmp,\"$tmp\\\\includes\",\"$tmp\\\\database\",\"$tmp\\\\admin\",\"$tmp\\\\uploads\",\"$tmp\\\\uploads\\\\media\" | Out-Null; Copy-Item \"$src\\\\api.php\" $tmp; Copy-Item \"$src\\\\download.php\" $tmp; Copy-Item \"$src\\\\subscribe.php\" $tmp; Copy-Item \"$src\\\\soulsync.php\" $tmp; Copy-Item \"$src\\\\SOULSYNC_SETUP.md\" $tmp; Copy-Item \"$src\\\\.htaccess\" $tmp; Copy-Item \"$src\\\\.user.ini\" $tmp; Copy-Item \"$src\\\\includes\\\\*.php\" \"$tmp\\\\includes\"; Copy-Item \"$src\\\\database\\\\schema.sql\" \"$tmp\\\\database\"; Copy-Item \"$src\\\\admin\\\\*.php\" \"$tmp\\\\admin\"; Set-Content -Path \"$tmp\\\\uploads\\\\index.html\" -Value '\\\\''ok'\\\\''; Set-Content -Path \"$tmp\\\\uploads\\\\media\\\\index.html\" -Value '\\\\''ok'\\\\''; Compress-Archive -Path $tmp -DestinationPath '\\\\''C:\\\\Users\\\\sgame\\\\Downloads\\\\soulsync-system-upload.zip'\\\\'' -Force; Write-Host '\\\\''ZIP v26 \\(soulsync.php in soulsync-system too\\)'\\\\''')",
+      "Bash(cp \"C:/Users/sgame/.gemini/antigravity-ide/scratch/soulsync-system/download.php\" \"/c/Users/sgame/Downloads/soulsync-system_download.php\" && echo \"download.php \\(smart\\) copied to Downloads\")",
+      "Bash(flutter analyze *)",
+      "Bash(flutter build *)"
+    ]
+  }
+}
