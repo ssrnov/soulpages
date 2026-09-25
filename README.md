@@ -10,7 +10,7 @@ Instead of sending a simple text message, SoulSync allows users to create meanin
 
 ## 🌐 Live Website
 
-🔗 **https://soulcyncc.site**
+🔗 **https://soulsyncc.site**
 
 ---
 
